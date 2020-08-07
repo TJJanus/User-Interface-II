@@ -8,7 +8,7 @@ box-sizing: border-box;
 margin:0;
 padding:0;
 max-width:100%;
-/* border: 1px solid grey; */
+ /* border: 1px solid grey;  */
 }
 
 /*RESET */
@@ -39,14 +39,22 @@ body{
 }
 
 nav a { /* links */
-    background-color:#4f8a8b;
-    color: #eeeeee;
+    /* background-color:#4f8a8b; */
+    /* color: #eeeeee; */
+   
+    background-color:white ;
+    color: #222831;
     display: flex;
     justify-content: space-between;
     padding: 2% 4%;
     text-decoration: none;
     font-family: 'Prompt', sans-serif;
-    border: 3px solid white;
+    border: 10px solid #222831;
+}
+
+nav a:hover{ /* home about contact hover */
+    background-color:#fbd46d ;
+    transition: 0.5s;
 }
 
 nav { /* actual nav links */
@@ -78,7 +86,7 @@ h1{ /* my name */
 
  .img {
     width:50%;
-    padding: 1% 1%;
+    padding: 1% 2%;
     display: flex;
     background-color:white;
 
@@ -127,6 +135,10 @@ font-size: 1.7rem;
     
 }
 
+.text .tweet {
+    text-decoration: none;
+}
+
 
 /* Gallery Start - image styles */
 
@@ -156,6 +168,7 @@ h3{ /* Like What You See */
     background-color:#222831 ;
     color: #fbd46d;
     margin: 2% 0;
+    font-size: 3rem;
 }
 
 .footer button { /* styles for the button contact me itself */
@@ -167,11 +180,12 @@ h3{ /* Like What You See */
     border:5px solid white;
     margin: 2% 0;
     font-family: 'Prompt', sans-serif;
-    padding: 1% 1%;
+    padding: 3% 3%;
     width: 250px;
     align-items: center;
     font-size: 2rem;
     text-decoration: none;
+    
 }
 .tj{
     text-decoration: none;
@@ -182,5 +196,15 @@ h3{ /* Like What You See */
     flex-direction: column;
     align-items: center;
     background-color:#222831  ;
+
+}
+
+a.tj{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    padding: 10px; 
+    
+    
 
 }
